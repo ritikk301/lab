@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+  
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="../css/A.css">
+<script type="text/javascript" src="../js/val2.js"></script>
+</head>
+<body>
+<div class="header">
+<img src="download.png" alt="nit dgp"/>
+<h3>NIT DURGAPUR</h3>
+<h5 font-color:white>
+(An Institute of National Importance under Government of India, Ministry of Human Resource Development) 
+<br>Mahatma Gandhi Avenue, Durgapur 713209, West Bengal, INDIA</h5>
+</div>
+<nav>
+`	<ul>
+		<li  ><a href="home.html">HOME</a> 
+</li>
+		<li><a href="admin.html">ADMIN</a></li>
+		<li><a href="student.html">STUDENTS</a></li>
+  
+	</ul>
+</nav>
+<h1><b><u>REQUIRED INFORMATION FOR PROFILE</u></b></h1>
+
+<form action="stud2handle.php" method="POST" >
+  <div class="imgcontainer">
+    <img src="student-icon-53587.png" alt="Avatar" class="avatar">
+  </div>
+
+  <div class="container">
+    <label for="rno"><b>Registration number</b></label>
+    <input type="text" placeholder="Enter Reg. No." name="rno" id="rg"  onkeyup="validatereg()" onblur="blurr('rg','a')"><label id="a"></label><br>
+	<label for="year"><b>Year of Joining</b></label>
+    <input type="text" placeholder="Joining Year" name="join" id="join" onkeyup="validatejoin()" onblur="blurr('join','z')" ><label id="z"></label><br>
+    <label for="year"><b>Year of Study</b></label>
+    <input type="text" placeholder="Year" name="year" id="year" onkeyup="validateyear()" onblur="blurr('year','b')" ><label id="b"></label><br>
+	
+	<label for="sem"><b>Semester</b></label>
+    <input type="text" placeholder="semester" name="sem" id="sem" onkeyup="validatesem()" onblur="blurr('sem','c')" ><label id="c"></label><br>
+	<label for="dob"><b>D.O.B</b></label>
+    <input type="text" placeholder="dd-mm-yyyy" name="dob" id="dob" onkeyup="validated() " onblur="blurr('dob','d')"><label id="d"></label><br>
+	
+	
+	<label for="department" ><b>department:<br></b></label>
+	<select name="department"  id="dept" ><br>
+  <option value="cse" selected>Computer Science</option>
+  <option value="civil">Civil</option>
+  <option value="BT">Bio Technology</option>
+  <option value="IT">Information Technology</option>
+  <option value="MECH.">Mechnical</option>
+  <option value="ELECTRICAL">Electrical</option>
+  <option value="ECE">E.C.E</option>
+  <option value="CHE">Chemical</option>
+  <option value="MME">Metallurgy</option>
+  </select>
+  <br>
+<label for="roll"><b>Roll no.</b></label>
+    <input type="text" placeholder="Roll No." name="roll" id="r" onkeyup="validater()"  onblur="blurr('r','e')" > 
+.	<label id="e"></label><br>
+  
+  
+  
+<label for="hobby" ><b>Hobby:</b><br></label>
+	<select name="hobby"  id="ho" onchange='show(this.value);' ><br>
+  <option value="1" selected>Cricket</option>
+  <option value="2">Football</option>
+  <option value="3">Swimming</option>
+  <option value="4"> Technology</option>
+  <option value="5">Singing</option>
+  <option value="6">Dancing</option>
+  <option value="7">Other</option>
+  
+  </select>
+<br><br>
+    
+    <textarea name="co" id="co" placeholder="Enter other hobby" cols="40" rows="7" ></textarea>
+	
+<br>
+
+<label for="cgpa"><b>C.G.P.A</b></label>
+    <input type="text" placeholder="CGPA" name="cgpa" id="cgpa" onblur="validatecgpa()"  onblur="blurr('cgpa','f')"><label id="f"></label><br>
+        
+    <button  onclick="validateform()" name="submit">SIGN UP</button>
+    
+	<label id="sub"></label><br>
+  <br>
+	<button type="reset" class="cancelbtn">RESET</button>
+
+    
+  </div>
+</form>
+
+</body>
+</html>

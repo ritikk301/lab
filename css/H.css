@@ -1,0 +1,76 @@
+.header img {   float:left;
+				height:150px;
+				width:150px;
+				align:centre;
+				margin-left:20px;
+				}
+.header{margin:0px;
+        text-color:white;
+        width:92.5%;
+		height:200px;
+		background-color:#0099cc;
+		padding:50px;
+		font:bold;
+		border:3px solid #001a00; }
+		
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+	 background-color: #333;
+	  overflow: hidden;
+	   
+}
+li {
+    display: inline;
+	 float:left;
+	  border-right: 1px solid #bbb;
+}
+a {
+    display: block;
+    padding: 8px;
+    
+}
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+li a:hover {
+    background-color: #33cc33;
+	
+}
+body {font-family: Arial, Helvetica, sans-serif;
+background-color:#d9d9d9;
+/*background-image:    url("../html/z6n5u9qr.jpg");
+    background-size:     1600px 1500px;                      
+    background-repeat:   no-repeat;
+    background-position: center center;*/  
+}
+img.avatar1 {
+	float:left;
+	<h4><i>STUDENT PORTAL</i></h4>
+	margin:200px;
+    width: 20%;
+	height :20%
+    border-radius: 50%;
+	
+}
+img:hover{-webkit-transform: scaleX(-1);
+    transform: scaleX(-1);}
+
+img.avatar2 {
+	float:right;
+	<h4><i> ADMIN PORTAL</i> <h4>
+	margin:200px;
+    width: 20%;
+	height :20%
+    border-radius: 50%;
+	
+}
+.imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+}

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+  
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="../css/A.css">
+<script type="text/javascript" src="../js/whole.js"></script>
+</head>
+<body>
+<div class="header">
+<img src="download.png" alt="nit dgp"/>
+<h3>NIT
+ DURGAPUR</h3>
+<h5 font-color:white>
+(An Institute of National Importance under Government of India, Ministry of Human Resource Development) 
+<br>Mahatma Gandhi Avenue, Durgapur 713209, West Bengal, INDIA</h5>
+</div>
+<nav>
+`	<ul>
+		<li  ><a href="home.html">HOME</a> 
+</li>
+		<li><a href="admin.html">ADMIN</a></li>
+		<li><a href="student.html">STUDENTS</a></li>
+  
+	</ul>
+</nav>
+<form action="#" method="post" name="form" >
+<div class="container1">
+<div class="imgcontainer">
+    <img src="student-icon-53587.png" alt="Avatar" class="avatar">
+  </div>
+  <div class="container">
+  <label for="name"><b>Full Name</b></label>
+   <input type="text" name="name"   onkeyup="validatename()" onblur="blurr('a','p')"  id="a" placeholder="firstname and lastname">
+   <label id="p"></label>
+   <br>
+   <label for="realname"><b>Username</b></label>
+   <input type="text" name="realname"   onkeyup="validateuname()" onblur="blurr('name','q')"  id="name" placeholder="username of your choice">
+   <label id="q"></label>
+    <br>
+   <label for="email"><b>email</b></label>   
+   <input type="text" name="email"   onkeyup="validateEmail()" onblur="blurr('b','r')"id="b" placeholder="Email">
+   <label id="r" ></label>
+    <br>
+   <label for="password"><b>password</b></label>
+   <input type="password" name="password" id="c" onkeyup="validatepassword()" onblur="blurr('c','s')" placeholder="Password" >
+   <label id="s"></label>
+    <br>
+  
+   <label for="phoneno"><b>Phone no.</b></label>
+   <input type="phoneno" name="phoneno" maxlength="13"id="d" onkeyup="validatephno()" onblur="blurr('d','t')" placeholder="Phone no.">
+   <span id="t" ></span>
+    <br>
+   
+</div>
+</div>
+<br><br>
+<div class="container2">
+<h3>IMPORTANT DETAILS</h3>
+  <div class="container">
+    <label for="rno"><b>Registration number</b></label>
+    <input type="text" placeholder="Enter Reg. No." name="rno" id="rg"  onkeyup="validatereg()" onblur="blurr('rg','a')"><label id="a"></label><br>
+	<label for="year"><b>Year of Joining</b></label>
+    <input type="text" placeholder="Joining Year" name="join" id="join" onkeyup="validatejoin()" onblur="blurr('join','z')" ><label id="z"></label><br>
+    <label for="year"><b>Year of Study</b></label>
+    <input type="text" placeholder="Year" name="year" id="year" onkeyup="validateyear()" onblur="blurr('year','b')" ><label id="b"></label><br>
+	
+	<label for="sem"><b>Semester</b></label>
+    <input type="text" placeholder="semester" name="sem" id="sem" onkeyup="validatesem()" onblur="blurr('sem','c')" ><label id="c"></label><br>
+	<label for="dob"><b>D.O.B</b></label>
+    <input type="text" placeholder="dd-mm-yyyy" name="dob" id="dob" onkeyup="validated() " onblur="blurr('dob','d')"><label id="d"></label><br>
+	
+	
+	<label for="department" ><b>department:<br></b></label>
+	<select name="department"  id="dept" ><br>
+  <option value="cse" selected>Computer Science</option>
+  <option value="civil">Civil</option>
+  <option value="BT">Bio Technology</option>
+  <option value="IT">Information Technology</option>
+  <option value="MECH.">Mechnical</option>
+  <option value="ELECTRICAL">Electrical</option>
+  <option value="ECE">E.C.E</option>
+  <option value="CHE">Chemical</option>
+  <option value="MME">Metallurgy</option>
+  </select>
+  <br>
+<label for="roll"><b>Roll no.</b></label>
+    <input type="text" placeholder="Roll No." name="roll" id="r" onkeyup="validater()"  onblur="blurr('r','e')" onfocus="rollcall('r','join','dept')"> 
+.	<label id="e"></label><br>
+  
+  <label for="HOBBY"><b>HOBBY:<br></b></label>
+	<select name="HOBBY"  id="mainselection" ><br>
+  <option value="Playing">Playing</option>
+  <option value="Painting">Painting</option>
+  <option value="Singing">Singing</option>
+  <option value="Dancing">Dancing</option>
+  <option value="Swiming" selected>Swiming</option>
+  <option value="Travelling">Travelling</option>
+</select>
+<br>
+
+<label for="cgpa"><b>C.G.P.A</b></label>
+    <input type="text" placeholder="CGPA" name="cgpa" id="cgpa" onblur="validatecgpa()"  onblur="blurr('cgpa','f')"><label id="f"></label><br>
+        
+    <button type="submit">SIGN UP</button>
+    
+	<label id="sub"></label><br>
+  <br>
+	<button type="reset" class="cancelbtn">RESET</button>
+
+    
+</div>
+</div>
+
+</form>
+</body>
+</body>
+
+</html>
